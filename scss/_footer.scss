@@ -1,0 +1,107 @@
+footer{
+    background: linear-gradient(115.6deg, #000000 -7.5%, #151515 105.49%);
+    width: 100%;
+    padding-top: 112px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    .footer__top{
+        padding-bottom: 45px;
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            li{
+                a{
+                    img{
+
+                    }
+                }
+            }
+        }
+    }
+    .footer__line{
+        height: 1px;
+        display: flex;
+        align-items: flex-start;
+        img{
+            max-height: 1px;
+        }
+    }
+    .footer__body{
+        width: 100%;
+        max-width: 33.5rem;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        .footer__body__logo{
+            display: block;
+            padding-bottom: 35px;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 13px;
+            li{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                p{
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+                }
+                a{
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+                    transition: all .5s ease-in-out;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+    }
+    .footer__bottom{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        border-top: 1px solid #9A9D9E;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+        button{
+            border: 1.5px solid var(--gray-100);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.7;
+            border-radius: 50%;
+            width: 3.7rem;
+            height: 3.7rem;
+            transition: all .3s ease;
+            &:hover{
+                opacity: 1;
+                background-color: var(--gray-100);
+            }
+            img{
+                max-width: 1.3rem;
+            }
+        }
+    }
+    // Responsive
+}
