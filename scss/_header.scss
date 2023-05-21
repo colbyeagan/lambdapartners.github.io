@@ -21,9 +21,12 @@ header{
         align-items: center;
         justify-content: space-between;
         .logo{
+            max-height: 19px;
             img{
                 width: 100%;
-                max-width: 15rem;
+                max-width: 15.3rem;
+                object-fit: cover;
+                background-size: cover;
             }
         }
         nav{
@@ -43,18 +46,16 @@ header{
                         font-size: 16px;
                         line-height: 19px;
                         text-align: center;
-                        color: #2D3235;
-                        transition: all 0.3s;
+                        color: rgba(45, 50, 53, 0.85);
+                        transition: all .5s ease-in-out;
                         position: relative;
                         &:hover{
-                            color:var(--gray-200);
+                            color:var(--gray-900);
+                            transition: all .5s ease-in-out;
                         }
                         &.active{
                             color:var(--gray-200);
-                            &::after{
-                                opacity: .8;
-                                bottom: -48%;
-                            }
+                            font-weight: 500;
                         }
                     }
                 }
