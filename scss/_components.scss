@@ -1,0 +1,57 @@
+.card__debra{
+
+    .container{
+        border-top: 1px solid #EAEAEA;
+        border-bottom: 1px solid #EAEAEA;
+        display: flex;
+        align-items: center;
+        padding-top: 112px;
+        padding-bottom: 112px;
+        .card__debra__title{
+            background: #F5F5F5;
+            border-radius: 10px 0px 0px 10px;
+            padding: 107px 67px;
+
+            h3, p{
+                font-family: 'Inter', sans-serif;
+                width: 100%;
+            }
+            h3{
+                max-width: 46.8rem;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 120%;
+                text-align: center;
+                color: #050110;
+                margin-bottom: 30px;
+            }
+            p{
+                max-width: 48.9rem;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 175%;
+                text-align: center;
+                color: #3F3D49;
+            }
+        }
+        .card__debra__image{
+            width: 100%;
+            height: 100%;
+            max-width: 520px;
+            max-height: 503px;
+            transition: all .5s;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                object-fit: cover;
+                transition: all .5s;
+                &:hover, &:focus{
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+    }
+}
