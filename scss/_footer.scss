@@ -13,19 +13,12 @@ footer{
             display: flex;
             align-items: center;
             gap: 30px;
-            li{
-                a{
-                    img{
-
-                    }
-                }
-            }
         }
     }
     .footer__line{
         height: 1px;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         img{
             max-height: 1px;
         }
@@ -35,6 +28,8 @@ footer{
         max-width: 33.5rem;
         padding-top: 45px;
         padding-bottom: 45px;
+        display: flex;
+        flex-direction: column;
         .footer__body__logo{
             display: block;
             padding-bottom: 35px;
@@ -104,4 +99,70 @@ footer{
         }
     }
     // Responsive
+    @media (max-width: 1200px){
+        padding-top: 90px;
+    }
+    @media (max-width: 768px){
+        // Align all items center
+        align-items: center;
+        .footer__top{
+            ul{
+                justify-content: center;
+            }
+        }
+        .footer__line{
+            align-items: center;
+            justify-content: center;
+        }
+        .footer__body{
+            max-width: 480px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            ul{
+                align-items: center;
+                text-align: center;
+            }
+        }
+        .footer__bottom{
+            justify-content: center;
+            gap: 40px;
+        }
+    }
+    @media (max-width: 480px){
+        padding-top: 4rem;
+        .footer__top{
+            padding-bottom: 4rem;
+        }
+        .footer__body{
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            max-width: 100%;
+            .footer__body__logo{
+                padding-bottom: 2rem;
+            }
+        }
+        .footer__bottom{
+            gap: 20px;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p{
+                text-align: center;
+            }
+        }
+    }
+    @media(max-width: 325px){
+        .footer__body{
+            ul{
+                li{
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
 }
