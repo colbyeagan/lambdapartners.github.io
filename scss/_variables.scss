@@ -1,7 +1,8 @@
 :root{
     // Gradient
-    --brand-gradient: linear-gradient(115.6deg, #000811 -7.5%, #000E17 105.49%);
+    --brand-gradient: linear-gradient(115.6deg, #000000 -7.5%, #151515 105.49%);
     // Gray Colors
+    --gray-brand:#6A6A6A;
     --gray-900: #030E15;
     --gray-800: #2D3235;
     --gray-700: #4F5152;
@@ -11,4 +12,5 @@
     --gray-300: #C6C7C8;
     --gray-200: #DADCDD;
     --gray-100: #F6F6F6;
+    --white: #FFFFFF;
 }
