@@ -43,4 +43,24 @@
             }
         }
     }
+    // Responsive
+    @media (max-width: 768px){
+        padding-top: 6rem;
+        .container{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            h1{
+                font-size: 36px;
+            }
+        }
+    }
+    @media (max-width: 480px){
+        padding-top: 4rem;
+        .container{
+            h1{
+                font-size: 26px;
+            }
+        }
+    }
 }
