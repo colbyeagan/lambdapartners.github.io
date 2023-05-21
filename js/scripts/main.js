@@ -29,12 +29,15 @@ if(menuButton){
 
 // Menu Header Change >20 scroll
 const header = document.getElementById("js-header");
-function fixedMenu() {
-  if (window.pageYOffset > 50) {
-    header.classList.add("changeHeight");
-  } else {
-    header.classList.remove("changeHeight");
+if(header){
+  function fixedMenu() {
+    if (window.pageYOffset > 50) {
+      header.classList.add("changeHeight");
+    } else {
+      header.classList.remove("changeHeight");
+    }
   }
+  document.addEventListener("scroll", fixedMenu);
 }
-document.addEventListener("scroll", fixedMenu);
+
 
