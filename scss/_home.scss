@@ -375,9 +375,19 @@
                             .bg-image{
                                 max-width: 400px;
                                 max-height: 450px;
+                                position: relative;
                                 img{
                                     min-width: 400px;
                                     min-height: 450px;
+                                }
+                                &::after{
+                                    width: 100%;
+                                    height: 100%;
+                                    content: "";
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    background: linear-gradient(180.14deg, rgba(0, 0, 0, 0) 60.01%, rgba(0, 0, 0, 0.6) 90.88%), 
                                 }
                             }
                             .logo-slide{
@@ -442,5 +452,71 @@
             }
         }
     }
+    @media (max-width: 475px){
+        height: 68rem;
+        .container{
+            .s-hero__slide{
+                max-width: 300px;
+                max-height: 300px;
+                .slide-principal{
+                    .icon-line{
+                        max-width: 70px;
+                        left: -35px;
+                    }
+                    .swiper-wrapper{
+                        max-width: 300px;
+                        max-height: 300px;
+                        .swiper-slide{
+                            .bg-image{
+                                max-width: 300px;
+                                max-height: 300px;
+                                img{
+                                    max-width: 300px;
+                                    max-height: 300px;
+                                }
+                            }
+                            .logo-slide{
+                                max-width: 80px;
+                            }
+                        }
+                    }
+                    .swiper-progress-bar{
+                        max-width: 240px;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 420px){
+        height: 69rem;
+        .container{
+            .s-hero__slide{
+                .slide-principal{
+                    .icon-line{
+                        display: none;
+                        pointer-events: none;
+                    }
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            .logo-slide{
+                                display: none;
+                                pointer-events: none;
+                            }
+                        }
+                    }
+                    .swiper-pagination-fraction{
+                        margin-left: 19px;
+                        margin-bottom: 34px;
+                    }
+                    .swiper-progress-bar{
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
 
 }
+// SECTION INVESTMENTS
