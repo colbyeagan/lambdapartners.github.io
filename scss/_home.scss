@@ -580,7 +580,7 @@
                         min-width: 575px;
                         object-fit: cover;
                         transition: all .5s ease-in-out;
-                        
+
                     }
 
                 }
@@ -604,6 +604,19 @@
                 &:hover{
                     border: 1px solid #000000;
                     background: #F6F6F6;
+                }
+            }
+            .swiper-pagination{
+                height: 3px;
+                bottom: 0px;
+                top: 110%;
+                left: 35%;
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+                background-color: #EEEEEE;
+                &-progressbar-fill{
+                    background: #000000;
                 }
             }
         }
