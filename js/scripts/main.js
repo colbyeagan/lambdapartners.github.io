@@ -31,6 +31,22 @@ const swiper = new Swiper(".slide-principal", {
       }
     }
 });
+const swiperInvestments = new Swiper(".slide-investments-principal", {
+  slidesPerView: 'auto',
+  spaceBetween: 15,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false // autoplay nao para de funcionar
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // Button Scroll Top
 const btnScrollTop = document.getElementById("js-btn-scroll-top");
