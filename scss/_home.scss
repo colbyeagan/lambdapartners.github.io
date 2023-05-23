@@ -520,3 +520,36 @@
 
 }
 // SECTION INVESTMENTS
+.s-investments{
+    background-color: white;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    .container{
+        .s-investments-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2{
+                width: 100%;
+                max-width: 262px;
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 120%;
+                color: #1A1A1A;
+            }
+            p{
+                width: 100%;
+                max-width: 342px;
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: #4F5152;
+                opacity: 0.8;
+            }
+        }
+    }
+    // Responsive
+}
