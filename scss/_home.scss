@@ -1,0 +1,53 @@
+// SECTION HERO
+.s-hero{
+    background: linear-gradient(115.6deg, #000000 -7.5%, #151515 105.49%);
+    padding-top: 45px;
+    padding-bottom: 67px;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .s-hero__title{
+            width: 100%;
+            max-width: 498px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            h1, p{
+                color: #FFFFFF;
+                font-weight: 400;
+            }
+            h1{
+                font-family: 'Poppins', sans-serif;
+                font-size: 64px;
+                line-height: 120%;
+                margin-bottom: 40px;
+            }
+            p{
+                font-family: 'Inter', sans-serif;
+                font-size: 18px;
+                line-height: 150%;
+            }
+            .link-properties{
+                margin-top: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                p{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 120%;
+                    color: #FFFFFF;
+                    transition: all .5s ease-in-out;
+                }
+                &:hover{
+                    p{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
