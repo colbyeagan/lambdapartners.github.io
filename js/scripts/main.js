@@ -1,5 +1,10 @@
 // Script Data AOS Animation
-AOS.init();
+AOS.init({
+  disable: function() {
+    var maxWidth = 800;
+    return window.innerWidth < maxWidth;
+  }
+});
 
 // Script for Hero Slide
 const progressSlide = document.querySelector('.js-progress'); // get progress bar
@@ -46,24 +51,28 @@ const swiperInvestments = new Swiper(".slide-investments-principal", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  // when window width is >= 320px
+  320: {
+    spaceBetween: 10
+  },
 });
 
 // Button Scroll Top
 const btnScrollTop = document.getElementById("js-btn-scroll-top");
 const imgBtnScrollTop = document.getElementById("js-img-footer");
 if(btnScrollTop){
-    btnScrollTop.addEventListener('click', () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
-    }),
-    btnScrollTop.addEventListener('mouseover', () => {
-      imgBtnScrollTop.setAttribute('src', '/assets/icons/icon-arrow-up-footer-black.svg');
-    }),
-    btnScrollTop.addEventListener('mouseleave', () => {
-      imgBtnScrollTop.setAttribute('src', '/assets/icons/icon-arrow-up-footer.svg');
-    })
+  btnScrollTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+  }),
+  btnScrollTop.addEventListener('mouseover', () => {
+    imgBtnScrollTop.setAttribute('src', '/assets/icons/icon-arrow-up-footer-black.svg');
+  }),
+  btnScrollTop.addEventListener('mouseleave', () => {
+    imgBtnScrollTop.setAttribute('src', '/assets/icons/icon-arrow-up-footer.svg');
+  })
 }
 // Add class active to menu button
 const menuButton = document.getElementById('js-menu-button');
