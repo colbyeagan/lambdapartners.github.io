@@ -12,14 +12,11 @@
             h1{
                 font-family: 'Poppins', sans-serif;
                 font-weight: 400;
-                font-size: 48px;
+                font-size: 42px;
                 line-height: 125%;
                 text-align: center;
                 letter-spacing: -0.01em;
                 color: #1A1A1A;
-            }
-            img{
-
             }
             p{
                 width: 100%;
@@ -31,6 +28,39 @@
                 text-align: center;
                 color: #4F5152;
                 opacity: 0.8;
+            }
+            
+        }
+    }
+    .s-property__repeater{
+        display: none;
+    }
+    // Responsive
+    @media (max-width: 991px){
+        .container{
+            .s-property__title{
+                h1{
+                    font-size: 28px;
+                }
+            }
+        }
+        gap: 25px;
+    }
+    @media (max-width: 768px){
+        
+    }
+    @media (max-width: 480px){
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        .container{
+            .s-property__title{
+                gap: 15px;
+                h1{
+                    font-size: 24px;
+                }
+                p{
+                    max-width: 100%;
+                }
             }
         }
     }
