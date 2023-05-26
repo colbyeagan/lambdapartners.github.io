@@ -6,6 +6,7 @@ AOS.init({
   }
 });
 
+
 // Script for Hero Slide
 const progressSlide = document.querySelector('.js-progress'); // get progress bar
 const swiper = new Swiper(".slide-principal", {
