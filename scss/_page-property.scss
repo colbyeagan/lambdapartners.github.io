@@ -33,7 +33,10 @@
         }
     }
     .s-property__repeater{
-        display: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0px;
+        width: 100%;
     }
     // Responsive
     @media (max-width: 991px){
