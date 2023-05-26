@@ -297,6 +297,7 @@
 .property__card{
     width: 100%;
     height: 100%;
+    min-height: 450px;
     max-height: 500px;
     overflow: hidden;
     box-sizing: border-box;
@@ -304,6 +305,7 @@
     .property__image{
         width: 100%;
         height: 100%;
+        min-height: 450px;
         max-height: 500px;
         background-size: cover;
         object-fit: cover;
@@ -313,16 +315,18 @@
     }
     .property__overlay{
         position: absolute;
+        overflow: hidden;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65));
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.7));
         opacity: 0;
         transition: all .4s;
         .property__description{
             width: 100%;
             max-width: 300px;
+            overflow: hidden;
             margin: 0 auto;
             letter-spacing: 3px;
             font-family: 'Poppins', sans-serif;
@@ -331,7 +335,7 @@
             line-height: 120%;
             text-align: center;
             color: #000000;
-            margin-top: 240px;
+            margin-top: 230px;
             text-transform: uppercase;
         }
     }
@@ -343,4 +347,62 @@
             opacity: 1;
         }
     }
+    // Responsive
+    @media (max-width: 991px){
+        min-height: 350px;
+        max-height: 400px;
+        .property__image{
+            min-height: 350px;
+            max-height: 400px;
+        }
+        .property__overlay{
+            .property__description{
+                font-size: 18px;
+                margin-top: 175px;
+                max-width: 250px;
+            }
+        }
+    }
+    @media (max-width: 768px){
+
+    }
+    @media (max-width: 480px){
+        min-height: 300px;
+        max-height: 350px;
+        .property__image{
+            min-height: 300px;
+            max-height: 350px;
+        }
+        .property__overlay{
+            .property__description{
+                font-size: 18px;
+                margin-top: 140px;
+                max-width: 250px;
+            }
+        }
+    }
+}
+.btn{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 156px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2D3235;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #F7F7F7;
+    border: 1px solid #2D3235;
+    transition: all .4s ease-in-out;
+    &:hover{
+        background-color: #F7F7F7;
+        color: #2D3235;
+        border: 1px solid #2D3235;
+    }
+    
 }
