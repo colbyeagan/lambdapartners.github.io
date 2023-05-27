@@ -57,6 +57,20 @@ const swiperInvestments = new Swiper(".slide-investments-principal", {
     spaceBetween: 10
   },
 });
+const swiperProperties = new Swiper(".s-custom-property__slide", {
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false // autoplay nao para de funcionar
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});
+
+
 
 // Button Scroll Top
 const btnScrollTop = document.getElementById("js-btn-scroll-top");
