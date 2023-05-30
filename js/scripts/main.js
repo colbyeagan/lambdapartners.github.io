@@ -68,6 +68,18 @@ const swiperProperties = new Swiper(".s-custom-property__slide", {
     dynamicBullets: true,
   },
 });
+const swiperOtherProperties = new Swiper(".s-slide-other", {
+  slidesPerView: 2,
+  spaceBetween: 15,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false // autoplay nao para de funcionar
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 
 // Button Scroll Top
