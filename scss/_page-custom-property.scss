@@ -168,3 +168,57 @@
         }
     }
 }
+.s-property__list{
+    padding-top: 112px;
+    .container{
+        padding-bottom: 112px;
+        border-bottom: 2px solid #EEEEEE;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .s-property__list__left{
+            width: 100%;
+            max-width: 170px;
+            h3{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 125%;
+                letter-spacing: -0.01em;
+                color: #1A1A1A;
+            }
+        }
+        .s-property__list__content{
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            .s-property__list__middle, .s-property__list__end{
+                display: flex;
+                align-items: flex-start;
+                gap: 40px;
+                position: relative;
+                h3{
+                    position: absolute;
+                    top: -20px;
+                    left: -80px;
+                }
+                ul{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 10px;
+                    flex-direction: column;
+                    li{
+                        span{
+
+                        }
+                        p{
+                             
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
