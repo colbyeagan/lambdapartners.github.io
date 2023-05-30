@@ -309,3 +309,49 @@
         }
     }
 }
+.s-social-media__post{
+    .container{
+        padding-top: 112px;
+        padding-bottom: 112px;
+        .s-social-media__post__title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 50px;
+            position: relative;
+            h4{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 112%;
+                letter-spacing: -1px;
+                color: #33303E;
+            }
+            // editing the pagination classes
+            .swiper-pagination{
+                position: relative;
+                transition: all .3s;
+                width: 60px;
+                .swiper-pagination-bullet{
+                    background: #000000;
+                    opacity: 0.3;
+                    border-radius: 12px;
+                    &:not(:first-child){
+                        margin-left: 4px;
+                    }
+                    transition: all .3s;
+                    &-active{
+                        opacity: 1;
+                        width: 17.23px;
+                        height: 7px;
+                        background: #000000;
+                        border-radius: 12px;
+                    }
+                }
+            }
+        }
+        .slide-social-media{
+            overflow: hidden;
+        }
+    }
+}
