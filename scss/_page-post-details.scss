@@ -282,3 +282,24 @@
         }
     }
 }
+.s-post-images-card{
+    padding-top: 112px;
+    padding-bottom: 112px;
+    .all-images-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        .image-card{
+            width: 100%;
+            height: 100%;
+            max-height: 300px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                max-height: 300px;
+                object-fit: cover;
+            }
+        }
+    }
+}
