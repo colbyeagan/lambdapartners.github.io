@@ -6,71 +6,105 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
-    .s-custom-property__title{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 60px;
-        h1{
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-            font-size: 36px;
-            line-height: 120%;
-            color: #050110;
-        }
-        p{
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 175%;
-            color: #4F5152;
+    .container{
+        .s-custom-property__title{
             width: 100%;
-            max-width: 300px;
-        }
-    }
-    .s-custom-property__slide{
-        width: 100%;
-        max-width: 1008px;
-        overflow-x: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        //position: relative;
-        margin: 0 auto;
-        .swiper-wrapper{
-            .swiper-slide{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+            h1{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 120%;
+                color: #050110;
+            }
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 175%;
+                color: #4F5152;
                 width: 100%;
-                height: 100%;
-                max-height: 600px;
-                max-width: 1008px;
-                overflow: hidden;
-                align-items: center;
-                justify-content: center;
-                img{
+                max-width: 300px;
+            }
+        }
+        .s-custom-property__slide{
+            width: 100%;
+            max-width: 1008px;
+            overflow-x: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            //position: relative;
+            margin: 0 auto;
+            .swiper-wrapper{
+                .swiper-slide{
                     width: 100%;
                     height: 100%;
                     max-height: 600px;
-                    min-height: 600px;
                     max-width: 1008px;
-                    margin: 0 auto;
-                    object-fit: cover;
-                    background-position: center;
-                    background-size: cover;
+                    overflow: hidden;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        max-height: 600px;
+                        min-height: 600px;
+                        max-width: 1008px;
+                        margin: 0 auto;
+                        object-fit: cover;
+                        background-position: center;
+                        background-size: cover;
+                    }
                 }
             }
-        }
-        .swiper-pagination{
-            position: absolute;
-            bottom: 110px;
-            &.swiper-pagination-bullets-dynamic{
-                //background: #050110 !important;
+            .swiper-pagination{
+                position: absolute;
+                bottom: 110px;
+                &.swiper-pagination-bullets-dynamic{
+                    //background: #050110 !important;
+                }
+            }
+            .swiper-pagination-bullet{
+                background: #050110;
+                width: 10px;
+                height: 10px;
             }
         }
-        .swiper-pagination-bullet{
-            background: #050110;
-            width: 10px;
-            height: 10px;
+    }
+}
+.s-property-content{
+    .container{
+        padding-top: 112px;
+        padding-bottom: 112px;
+        border-top: 2px solid #EEEEEE;
+        border-bottom: 2px solid #EEEEEE;
+        .s-property-content__title{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 100px;
+            h2, p{
+                font-family: 'Poppins', sans-serif;
+            }
+            h2{
+                font-size: 24px;
+                line-height: 120%;
+                color: #050110;
+                width: 100%;
+                max-width: 240px;
+                font-weight: 500;
+            }
+            p{
+                font-size: 18px;
+                line-height: 175%;
+                color: #4F5152;
+                width: 100%;
+                max-width: 160px;
+            }
         }
     }
 }

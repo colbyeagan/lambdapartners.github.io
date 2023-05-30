@@ -6,7 +6,6 @@ AOS.init({
   }
 });
 
-
 // Script for Hero Slide
 const progressSlide = document.querySelector('.js-progress'); // get progress bar
 const swiper = new Swiper(".slide-principal", {
@@ -69,7 +68,6 @@ const swiperProperties = new Swiper(".s-custom-property__slide", {
     dynamicBullets: true,
   },
 });
-
 
 
 // Button Scroll Top
