@@ -79,6 +79,18 @@ const swiperOtherProperties = new Swiper(".s-slide-other", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    }
+  }
+  
 });
 
 
