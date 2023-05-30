@@ -431,7 +431,6 @@
     }
 }
 .s-property-content-right{
-    display: none;
     .container{
         padding-top: 112px;
         padding-bottom: 112px;
@@ -463,6 +462,7 @@
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
+            gap: 10px;
             .image__property__left{
                 overflow: hidden;
                 .image-div{
@@ -514,6 +514,81 @@
 
                 }
                 
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 1200px){
+        .container{
+            .s-property-content__images{
+                .image__property__left{
+                    .image-div{
+                        max-height: 486px;
+                        max-width: 650px;
+                        img{
+                            max-height: 486px;
+                            max-width: 650px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 991px){
+        .container{
+            padding-top: 60px;
+            padding-bottom: 60px;
+            .s-property-content__title{
+                padding-bottom: 40px;
+            }
+            .s-property-content__images{
+                .image__property__left, .image__property__right{
+                    .image-div{
+                        img{
+                            &:hover{
+                                transform: none;
+                            }
+                        }
+                    }
+                    p{
+                        padding-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 768px){
+        .container{
+            .s-property-content__images{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                .image__property__left{
+                    p{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 480px){
+        .container{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            .s-property-content__title{
+                padding-bottom: 30px;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                flex-direction: column;
+                h2{
+                    text-align: center;
+                }
+                p{
+                    font-size: 16px;
+                    text-align: center;
+                }
             }
         }
     }
