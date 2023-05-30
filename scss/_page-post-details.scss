@@ -1,0 +1,75 @@
+.s-post__details{
+    padding-top: 40px;
+    padding-bottom: 11.2rem;
+    .container{
+        .s-post__details__breadcrumbs{
+            padding-bottom: 49px;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 4rem;
+                flex: 1;
+                width: 100%;
+                li{
+                    position: relative;
+                    // arrow right
+                    &:not(:last-child){
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            right: -25px;
+                            top: 4px;
+                            width: 10px;
+                            height: 10px;
+                            background: url("../assets/icons/icon-arrow-right-post-details.svg") no-repeat center center;
+                        }
+                    }
+                    a{
+                        display: block;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 105%;
+                        color: #030E15;
+                        opacity: 0.7;
+                        transition: all .3s;
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                    span{
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 105%;
+                        color: #030E15;
+                        transition: all .3s;
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            a{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 105%;
+                color: #030E15;
+                opacity: 0.7;
+                transition: all .3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
