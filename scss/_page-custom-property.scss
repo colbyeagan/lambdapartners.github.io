@@ -315,7 +315,6 @@
     }
 }
 .s-property__list{
-    display: none;
     padding-top: 112px;
     .container{
         padding-bottom: 112px;
@@ -358,11 +357,73 @@
                     flex-direction: column;
                     li{
                         span{
-
+                            font-weight: 700;
                         }
-                        p{
-                             
-                        }
+                    }
+                }
+            }
+        }
+    }
+    // Responsive 
+    @media (max-width: 930px){
+        padding-top: 60px;
+        .container{
+            padding-bottom: 60px;
+            flex-direction: column;
+            gap: 60px;
+            .s-property__list__left{
+                max-width: 100%;
+                text-align: center;
+            }
+            .s-property__list__content{
+                max-width: 100%;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                .s-property__list__middle, .s-property__list__end{
+                    flex-direction: column;
+                }
+                h3{
+                    left: -70px !important;
+                }
+            
+            }
+        }
+    }
+    @media (max-width: 480px){
+        padding-top: 40px;
+        .container{
+            padding-bottom: 40px;
+            gap: 40px;
+            .s-property__list__left{
+                max-width: 100%;
+            }
+            .s-property__list__content{
+                align-items: center;
+                justify-content: center;
+                max-width: 100%;
+                .s-property__list__middle, .s-property__list__end{
+                    align-items: center;
+                    justify-content: center;
+                    h3{
+                        top: -10px;
+                        left: -60px !important;
+                    }
+                    ul{
+                        align-items: center;
+                    }
+                
+                }
+            }
+        }
+    }
+    @media (max-width: 350px){
+        .container{
+            .s-property__list__content{
+                .s-property__list__middle, .s-property__list__end{
+                    h3{
+                       display: none;
                     }
                 }
             }
