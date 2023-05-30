@@ -40,7 +40,7 @@ const swiperInvestments = new Swiper(".slide-investments-principal", {
   slidesPerView: 'auto',
   spaceBetween: 5,
   autoplay: {
-    delay: 4000,
+    delay: 3000,
     disableOnInteraction: false // autoplay nao para de funcionar
   },
   pagination: {

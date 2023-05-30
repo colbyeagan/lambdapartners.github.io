@@ -134,8 +134,140 @@
             }
         }
     }
+    // Responsive
+    @media (max-width: 1100px){
+        .container{
+            .s-post__details__breadcrumbs{
+                padding-bottom: 30px;
+            }
+            .s-post__details__featured{
+                .s-post__details__info{
+                    max-width: 93rem;
+                    padding-left: 50px;
+                    padding-bottom: 40px;
+                    gap: 15px;
+                    h1{
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 991px){
+        margin-bottom: 60px;
+        .container{
+            .s-post__details__featured{
+                .s-post__details__image{
+                    img{
+                        &:hover{
+                            transform: none;
+                        }
+                    }
+                }
+                .s-post__details__info{
+                    max-width: 80rem;
+                    padding: 30px;
+                    gap: 15px;
+                    h1{
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 768px){
+        .container{
+            .s-post__details__featured{
+                .s-post__details__image{
+                    img{
+                        &:hover{
+                            transform: none;
+                        }
+                    }
+                }
+                .s-post__details__info{
+                    bottom: -160px;
+                    max-width: 80rem;
+                    padding: 30px;
+                    gap: 15px;
+                    padding-bottom: 40px;
+                    border-radius: 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    h1{
+                        font-size: 26px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 660px){
+        .container{
+            .s-post__details__breadcrumbs{
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                ul{
+                    justify-content: center;
+                }
+            }
+            .s-post__details__featured{
+                .s-post__details__info{
+                    bottom: -190px;
+                    border: 1px solid #EEEEEE;
+                    h1{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 500px){
+        .container{
+            margin-bottom: 40px;
+            .s-post__details__breadcrumbs{
+                gap: 15px;
+                ul{
+                    flex-direction: column;
+                    gap: 15px;
+                }
+            }
+            .s-post__details__featured{
+                .s-post__details__info{
+                    bottom: -150px;
+                    padding: 20px;
+
+                }
+            }
+        }
+    }
+    @media (max-width: 460px){
+        .container{
+            margin-bottom: 40px;
+            .s-post__details__breadcrumbs{
+                gap: 15px;
+                ul{
+                    flex-direction: column;
+                    gap: 15px;
+                }
+            }
+            .s-post__details__featured{
+                .s-post__details__info{
+                    padding: 15px;
+                    .categorie{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 .s-post__content{
+    display: none;
     .container{
         display: flex;
         align-items: flex-start;
@@ -289,6 +421,7 @@
     }
 }
 .s-post-images-card{
+    display: none;
     padding-top: 112px;
     padding-bottom: 112px;
     .all-images-card{
@@ -310,6 +443,7 @@
     }
 }
 .s-social-media__post{
+    display: none;
     .container{
         padding-top: 112px;
         padding-bottom: 112px;
