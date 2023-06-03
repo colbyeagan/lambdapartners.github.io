@@ -485,6 +485,13 @@
         }
     }
     // Responsive
+    @media (max-width: 1400px){
+        .card-social-media-footer{
+            span{
+                display: none;
+            }
+        }
+    }
     @media (max-width: 390px){
         .card-social-media-footer{
             span{
