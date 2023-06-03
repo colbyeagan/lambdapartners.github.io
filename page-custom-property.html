@@ -44,6 +44,8 @@
   <!-- === CSS === -->
   <link rel="stylesheet" href="css/plugins.css">
   <link rel="stylesheet" href="css/main.css">
+  <!-- === LIGHTBOX === -->
+  <link rel="stylesheet" href="./css/lib/lightbox.css">
 </head>
 <body>
   <!-- === SIDEBAR === -->
@@ -175,14 +177,18 @@
         </div>
         <div class="s-property-content__images">
           <div class="image__property__left" data-aos="fade-right" data-aos-once="true">
-            <div class="image-div">
-              <img src="./assets/properties/02.jpg" alt="image property" title="image property">
+            <div class="gallery">
+              <a href="./assets/properties/02.jpg" data-lightbox="models" data-title="Caption 1">
+                <img src="./assets/properties/02.jpg" alt="image property" title="image property">
+              </a>
             </div>
             <p class="image__description">Brighton Property, England</p>
           </div>
           <div class="image__property__right" data-aos="fade-left" data-aos-once="true">
-            <div class="image-div">
-              <img src="./assets/properties/02.jpg" alt="image property" title="image property">
+            <div class="gallery">
+              <a href="./assets/properties/02.jpg" data-lightbox="models" data-title="Caption 1">
+                <img src="./assets/properties/02.jpg" alt="image property" title="image property">
+              </a>
             </div>
           </div>
         </div>
@@ -246,12 +252,12 @@
         </div>
         <div class="s-property-content__images">
           <div class="image__property__right" data-aos="fade-right" data-aos-once="true">
-            <div class="image-div">
+            <div class="gallery">
               <img src="./assets/properties/02.jpg" alt="image property" title="image property">
             </div>
           </div>
           <div class="image__property__left" data-aos="fade-left" data-aos-once="true">
-            <div class="image-div">
+            <div class="gallery">
               <img src="./assets/properties/02.jpg" alt="image property" title="image property">
             </div>
             <p class="image__description">Brighton Property, England</p>
@@ -362,5 +368,6 @@
   <!-- === JavaScript === -->
   <script language="javascript" type="text/javascript" src="js/plugins.js"></script>
   <script language="javascript" type="text/javascript" src="js/all.js"></script>
+  <script language="javascript" type="text/javascript" src="js/lib/lightbox-plus-jquery.js"></script>
 </body>
 </html>

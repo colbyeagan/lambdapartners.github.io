@@ -37,7 +37,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            //position: relative;
+            position: relative;
             margin: 0 auto;
             .swiper-wrapper{
                 .swiper-slide{
@@ -67,7 +67,7 @@
             }
             .swiper-pagination{
                 position: absolute;
-                bottom: 110px;
+                bottom: 20px;
                 &.swiper-pagination-bullets-dynamic{
                     //background: #050110 !important;
                 }
@@ -187,7 +187,7 @@
             gap: 10px;
             .image__property__left{
                 overflow: hidden;
-                .image-div{
+                .gallery{
                     width: 100%;
                     height: 100%;
                     max-height: 486px;
@@ -200,9 +200,6 @@
                         max-width: 730px;
                         object-fit: cover;
                         transition: all .4s ease-in-out;
-                        &:hover{
-                            transform: scale(1.2);
-                        }
                     }
                 }
                 p{
@@ -215,7 +212,7 @@
                 }
             }
             .image__property__right{
-                .image-div{
+                .gallery{
                     overflow: hidden;
                     width: 100%;
                     height: 100%;
@@ -228,9 +225,6 @@
                         max-height: 267px;
                         object-fit: cover;
                         transition: all .4s ease-in-out;
-                        &:hover{
-                            transform: scale(1.2);
-                        }
                     }
 
                 }
@@ -243,7 +237,7 @@
         .container{
             .s-property-content__images{
                 .image__property__left{
-                    .image-div{
+                    .gallery{
                         max-height: 486px;
                         max-width: 650px;
                         img{
@@ -264,7 +258,7 @@
             }
             .s-property-content__images{
                 .image__property__left, .image__property__right{
-                    .image-div{
+                    .gallery{
                         img{
                             &:hover{
                                 transform: none;
@@ -465,7 +459,7 @@
             gap: 10px;
             .image__property__left{
                 overflow: hidden;
-                .image-div{
+                .gallery{
                     width: 100%;
                     height: 100%;
                     max-height: 486px;
@@ -494,7 +488,7 @@
                 }
             }
             .image__property__right{
-                .image-div{
+                .gallery{
                     overflow: hidden;
                     width: 100%;
                     height: 100%;
@@ -522,7 +516,7 @@
         .container{
             .s-property-content__images{
                 .image__property__left{
-                    .image-div{
+                    .gallery{
                         max-height: 486px;
                         max-width: 650px;
                         img{
@@ -543,7 +537,7 @@
             }
             .s-property-content__images{
                 .image__property__left, .image__property__right{
-                    .image-div{
+                    .gallery{
                         img{
                             &:hover{
                                 transform: none;
