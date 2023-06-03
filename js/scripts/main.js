@@ -60,7 +60,7 @@ const swiperProperties = new Swiper(".s-custom-property__slide", {
   slidesPerView: 'auto',
   centeredSlides: true,
   autoplay: {
-    delay: 4000,
+    delay: 2000,
     disableOnInteraction: false // autoplay nao para de funcionar
   },
   pagination: {
