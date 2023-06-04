@@ -318,3 +318,16 @@
         transition: all .4s ease-in-out;
     }
 }
+.s-foundation-logos{
+    .container{
+        padding-top: 112px;
+        padding-bottom: 112px;
+        border-top: 1px solid #C6C7C8;
+        border-bottom: 1px solid #C6C7C8;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
