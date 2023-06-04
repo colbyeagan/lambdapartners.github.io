@@ -125,6 +125,26 @@ const swiperFoundation= new Swiper(".s-foundation-slide", {
     prevEl: ".swiper-button-prev",
   },
 });
+const swiperCharitable = new Swiper(".slide-charitable-principal", {
+  slidesPerView: 'auto',
+  spaceBetween: 5,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false // autoplay nao para de funcionar
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // when window width is >= 320px
+  320: {
+    spaceBetween: 10
+  },
+});
 
 // Button Scroll Top
 const btnScrollTop = document.getElementById("js-btn-scroll-top");
