@@ -138,7 +138,7 @@
                         max-width: 244px;
                         font-family: 'Roboto', sans-serif;
                         font-weight: 400;
-                        font-size: 15px;
+                        font-size: 16px;
                         line-height: 150%;
                         color: #7A7786;
                     }
@@ -159,6 +159,132 @@
                 text-align: center;
                 text-transform: uppercase;
                 color: #4E4B59;
+            }
+        }
+    }
+}
+.s-recent-campaign{
+    .container{
+        padding-bottom: 112px;
+        border-bottom: 1px solid #C6C7C8;
+        .s-recent-campaign__title{
+            padding-bottom: 30px;
+            border-bottom: 1px solid #C6C7C8;
+            margin-bottom: 40px;
+            h3{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 120%;
+                color: #1A1A1A;
+            }
+        }
+        .s-recent-campaign-all{
+            display: flex;
+            align-items: flex-start;
+            gap: 104px;
+            .s-recent-campaign-all-left{
+                .campaign-card-large{
+                    display: inline-block;
+                    width: 100%;
+                    min-width: 690px;
+                    max-width: 690px;
+                    .campaign-image{
+                        margin-bottom: 26px;
+                        width: 100%;
+                        height: 100%;
+                        max-width: 690px;
+                        max-height: 346px;
+                        overflow: hidden;
+                        border-radius: 5px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            max-width: 690px;
+                            max-height: 346px;
+                            object-fit: cover;
+                            border-radius: 5px;
+                            transition: all .3s;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                    span{
+                        display: block;
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 700;
+                        font-size: 13px;
+                        line-height: 105%;
+                        letter-spacing: 0.05em;
+                        text-transform: uppercase;
+                        color: #7A7786;
+                        margin-bottom: 15px;
+                    }
+                    h3{
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 150%;
+                        letter-spacing: -0.5px;
+                        color: #33303E;
+                        margin-bottom: 15px;
+                    }
+                    p{
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 175%;
+                        color: #4E4B59;
+                    }
+                }
+            }
+            .s-recent-campaign-all-right{
+                display: flex;
+                gap: 50px;
+                flex-direction: column;
+                .campaign-card-small{
+                    width: 100%;
+                    max-width: 416px;
+                    .campaign-image{
+                        margin-bottom: 26px;
+                        width: 100%;
+                        height: 100%;
+                        max-width: 416px;
+                        max-height: 217px;
+                        overflow: hidden;
+                        border-radius: 5px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            max-width: 416px;
+                            max-height: 217px;
+                            transition: all .3s;
+                            border-radius: 5px;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                    span{
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 700;
+                        font-size: 13px;
+                        line-height: 105%;
+                        letter-spacing: 0.05em;
+                        text-transform: uppercase;
+                        color: #7A7786;
+                    }
+                    h3{
+                        margin-top: 15px;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 112%;
+                        letter-spacing: -0.5px;
+                        color: #33303E;
+                    }
+                }
             }
         }
     }
