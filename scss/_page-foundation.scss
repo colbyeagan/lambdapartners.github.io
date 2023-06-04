@@ -289,3 +289,32 @@
         }
     }
 }
+.s-all-events{
+    padding-top: 112px;
+    padding-bottom: 112px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .s-all-events-repeater{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        width: 100%;
+        .foundation__card{
+            .foundation__image{
+
+            }
+            .foundation__overlay{
+                .foundation__description{
+
+                }
+            }
+        }
+    }
+    .btn{
+        margin-top: 90px;
+        transition: all .4s ease-in-out;
+    }
+}
