@@ -92,7 +92,6 @@ const swiperOtherProperties = new Swiper(".s-slide-other", {
   }
   
 });
-// Script for Swipper Slide
 const swiperSocialMedia = new Swiper(".slide-social-media", {
   slidesPerView: 3,
   spaceBetween: 32,
@@ -115,7 +114,17 @@ const swiperSocialMedia = new Swiper(".slide-social-media", {
     }
   }
 });
-
+const swiperFoundation= new Swiper(".s-foundation-slide", {
+  slidesPerView: 1,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false // autoplay nao para de funcionar
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // Button Scroll Top
 const btnScrollTop = document.getElementById("js-btn-scroll-top");
