@@ -447,6 +447,23 @@
 }
 .s-videos-secondary{
     .s-videos-content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-right: 112px;
+        .video-youtube{
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              }
+        }
         .s-videos-text-card{
             background: #FFFFFF;
             border: 0.5px solid #C6C7C8;
@@ -458,6 +475,7 @@
             align-items: center;
             flex-direction: column;
             padding-bottom: 80px;
+            margin-top: -70px;
             h4{
                 font-family: 'Poppins', sans-serif;
                 font-weight: 600;
