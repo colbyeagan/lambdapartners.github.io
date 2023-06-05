@@ -39,6 +39,11 @@ const swiper = new Swiper(".slide-principal", {
 const swiperInvestments = new Swiper(".slide-investments-principal", {
   slidesPerView: 'auto',
   spaceBetween: 5,
+  direction: "horizontal",
+  freeMode: true,
+  mousewheel: {
+    releaseOnEdges: true,
+  },
   autoplay: {
     delay: 3000,
     disableOnInteraction: false // autoplay nao para de funcionar
