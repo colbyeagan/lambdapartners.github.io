@@ -6,6 +6,27 @@ AOS.init({
   }
 });
 
+// Configure the modal
+const btnOpenModal = document.querySelector('.js-modal-foundation-button');
+const btnCloseModal = document.querySelector('.js-close');
+
+if(btnOpenModal){
+  btnOpenModal.addEventListener('click', (Event) => {
+    Event.preventDefault();
+    let html = document.body;
+     // add the class to the html (not to the specific element)
+     html.classList.add('show-modal'); // selecting
+  })
+}
+if (btnCloseModal){
+  btnCloseModal.addEventListener('click', (Event) => {
+    Event.preventDefault();
+    let html = document.body;
+     // add the class to the html (not to the specific element)
+     html.classList.remove('show-modal'); // selecting
+  })
+}
+
 // Script for Hero Slide
 const progressSlide = document.querySelector('.js-progress'); // get progress bar
 const swiper = new Swiper(".slide-principal", {
