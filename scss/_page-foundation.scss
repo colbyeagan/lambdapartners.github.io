@@ -518,6 +518,7 @@
     }
     @media (max-width: 991px){
         padding-top: 60px;
+        padding-bottom: 60px;
     }
     @media (max-width: 768px){
         .s-all-events-repeater{
@@ -529,6 +530,7 @@
     }
     @media (max-width: 480px){
         padding-top: 20px;
+        padding-bottom: 40px;
         .foundation__card{
             max-height: 250px;
             min-height: 250px;
@@ -539,7 +541,6 @@
     }
 }
 .s-foundation-logos{
-    display: none;
     .container{
         padding-top: 112px;
         padding-bottom: 112px;
@@ -549,6 +550,25 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+        }
+    }
+    // Responsive
+    @media (max-width: 991px){
+        .container{
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    }
+    @media (max-width: 600px){
+        .container{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            ul{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+            }
         }
     }
 }
