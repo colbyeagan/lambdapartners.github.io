@@ -573,7 +573,6 @@
     }
 }
 .s-charitable-causes{
-    display: none;
     padding-bottom: 112px;
     .container{
         padding-top: 112px;
@@ -652,6 +651,80 @@
                 background-color: #dcdcdc;
                 &-progressbar-fill{
                     background: #000000;
+                }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 991px){
+        .container{
+            padding-top: 60px;
+        }
+    }
+    @media (max-width: 768px){
+        padding-bottom: 40px;
+        .container{
+            .s-charitable-causes__title{
+                margin-bottom: 40px;
+                text-align: center;
+                h3{
+                    font-size: 26px;
+                }
+            }
+        }
+        .s-charitable__slide{
+            .slide-charitable-principal{
+                .swiper-wrapper{
+                    max-height: 300px;
+                    .swiper-slide{
+                        max-height: 300px;
+                        max-width: 420px;
+                        img{
+                            max-height: 300px;
+                            min-height: 300px;
+                            max-width: 420px;
+                            min-width: 420px;
+                        }
+                    }
+                }
+                .swiper-pagination{
+                    top: 113%;
+                }
+            }
+        }
+    }
+    @media (max-width: 480px){
+        padding-bottom: 40px;
+        .container{
+            padding-top: 40px;
+            .s-charitable-causes__title{
+                margin-bottom: 40px;
+                text-align: center;
+                h3{
+                    font-size: 24px;
+                }
+            }
+        }
+        
+        .s-charitable__slide{
+            .slide-charitable-principal{
+                .swiper-wrapper{
+                    max-height: 280px;
+                    .swiper-slide{
+                        max-height: 280px;
+                        max-width: 280px;
+                        img{
+                            max-height: 280px;
+                            min-height: 280px;
+                            max-width: 280px;
+                            min-width: 280px;
+                        }
+                    }
+                }
+                .swiper-pagination{
+                    top: 113%;
+                    max-width: 300px;
+                    left: calc(50% - 150px);
                 }
             }
         }
