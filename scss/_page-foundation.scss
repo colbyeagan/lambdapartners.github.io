@@ -58,8 +58,44 @@
             background: #F6F6F6;
         }
     }
+    // Responsive
+    @media (max-width: 991px){
+        .swiper-wrapper{
+            .swiper-slide{
+                .swiper__image{
+                    min-height: 450px;
+                    max-height: 450px;
+                    img{
+                        min-height: 450px;
+                        max-height: 450px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 468px){
+        .swiper-wrapper{
+            .swiper-slide{
+                .swiper__image{
+                    min-height: 350px;
+                    max-height: 350px;
+                    img{
+                        min-height: 350px;
+                        max-height: 350px;
+                    }
+                }
+            }
+        }
+        .swiper-button-next, .swiper-button-prev{
+            margin-right: 30px;
+            margin-left: 30px;
+            max-width: 50px !important;
+            max-height: 50px !important;
+        }
+    }
 }
 .s-foundation-hero{
+    display: none;
     .container{
         display: flex;
         justify-content: space-between;
@@ -167,6 +203,7 @@
     }
 }
 .s-recent-campaign{
+    display: none;
     .container{
         padding-bottom: 112px;
         border-bottom: 1px solid #C6C7C8;
@@ -293,6 +330,7 @@
     }
 }
 .s-all-events{
+    display: none !important;
     padding-top: 112px;
     padding-bottom: 112px;
     height: 100%;
@@ -322,6 +360,7 @@
     }
 }
 .s-foundation-logos{
+    display: none;
     .container{
         padding-top: 112px;
         padding-bottom: 112px;
@@ -335,6 +374,7 @@
     }
 }
 .s-charitable-causes{
+    display: none;
     padding-bottom: 112px;
     .container{
         padding-top: 112px;
@@ -419,6 +459,7 @@
     }
 }
 .s-videos{
+    display: none;
     background: #F7F7F7;
     .s-videos__title{
         width: 100%;
@@ -449,6 +490,7 @@
     }
 }
 .s-videos-secondary{
+    display: none;
     .s-videos-content{
         display: flex;
         align-items: flex-start;
@@ -570,6 +612,7 @@
     }
 }
 .s-testimonials{
+    display: none;
     padding-top: 112px;
     padding-bottom: 180px;
     margin-top: -43px;
