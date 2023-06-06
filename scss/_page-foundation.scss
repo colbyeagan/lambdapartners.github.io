@@ -273,7 +273,6 @@
 .s-recent-campaign{
     .container{
         padding-bottom: 112px;
-        border-bottom: 1px solid #C6C7C8;
         .s-recent-campaign__title{
             padding-bottom: 30px;
             border-bottom: 1px solid #C6C7C8;
@@ -495,8 +494,6 @@
     }
 }
 .s-all-events{
-    display: none !important;
-    padding-top: 112px;
     padding-bottom: 112px;
     height: 100%;
     display: flex;
@@ -506,22 +503,39 @@
     .s-all-events-repeater{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 10px;
+        grid-gap: 5px;
         width: 100%;
-        .foundation__card{
-            .foundation__image{
-
-            }
-            .foundation__overlay{
-                .foundation__description{
-
-                }
-            }
-        }
     }
     .btn{
         margin-top: 90px;
         transition: all .4s ease-in-out;
+    }
+    // Responsive
+    @media (max-width: 1200px){
+        .s-all-events-repeater{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 991px){
+        padding-top: 60px;
+    }
+    @media (max-width: 768px){
+        .s-all-events-repeater{
+            grid-template-columns: 1fr;
+        }
+        .btn{
+            margin-top: 60px;
+        }
+    }
+    @media (max-width: 480px){
+        padding-top: 20px;
+        .foundation__card{
+            max-height: 250px;
+            min-height: 250px;
+        }
+        .btn{
+            margin-top: 40px;
+        }
     }
 }
 .s-foundation-logos{
