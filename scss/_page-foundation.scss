@@ -969,7 +969,6 @@
     }
 }
 .s-testimonials{
-    display: none;
     padding-top: 112px;
     padding-bottom: 180px;
     margin-top: -43px;
@@ -1045,6 +1044,33 @@
             }
             .swiper-button-next{
                 left: 515px;
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 991px){
+        padding-bottom: 100px;
+        background-image: none;
+        .container{
+            h3{
+                font-size: 24px;
+            }
+            .s-testimonials-slide{
+                .swiper-wrapper{
+                    img{
+                        display: none;
+                    }
+                }
+            }
+            .s-testimonials-pagination{
+                .swiper-button-prev{
+                    left: 200px;
+    
+                }
+                .swiper-button-next{
+                    left: 230px;
+                }
+            
             }
         }
     }
