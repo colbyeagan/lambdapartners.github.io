@@ -143,7 +143,7 @@ const swiperSocialMedia = new Swiper(".slide-social-media", {
 const swiperFoundation= new Swiper(".s-foundation-slide", {
   slidesPerView: 1,
   autoplay: {
-    delay: 3000,
+    delay: 2000,
     disableOnInteraction: false // autoplay nao para de funcionar
   },
   navigation: {
