@@ -45,7 +45,7 @@ const swiperInvestments = new Swiper(".slide-investments-principal", {
     releaseOnEdges: true,
   },
   autoplay: {
-    delay: 3000,
+    delay: 500,
     disableOnInteraction: false // autoplay nao para de funcionar
   },
   pagination: {
@@ -148,6 +148,17 @@ const swiperCharitable = new Swiper(".slide-charitable-principal", {
   // when window width is >= 320px
   320: {
     spaceBetween: 10
+  },
+});
+const swiperTestimonials = new Swiper(".s-testimonials-slide", {
+  slidesPerView: 1,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false // autoplay nao para de funcionar
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
