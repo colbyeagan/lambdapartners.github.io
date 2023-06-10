@@ -182,6 +182,14 @@ const swiperTestimonials = new Swiper(".s-testimonials-slide", {
     prevEl: ".swiper-button-prev",
   },
 });
+const swiperVideos= new Swiper(".s-video-default-container", {
+  slidesPerView: 1,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false // autoplay nao para de funcionar
+  },
+});
 
 // Button Scroll Top
 const btnScrollTop = document.getElementById("js-btn-scroll-top");
