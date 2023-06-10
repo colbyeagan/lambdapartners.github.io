@@ -221,13 +221,3 @@ if(header){
   }
   document.addEventListener("scroll", fixedMenu);
 }
-
-// Menu dropdown
-const dropdownMenuItem = document.getElementById('js-btn-foundation-dropdown'); // item on nav
-const dropdownMenu = document.querySelector('.js-foundation-dropdown'); // Menu Drodpdown
-dropdownMenuItem.addEventListener('mouseover', () => {
-  dropdownMenu.classList.toggle('active');
-});
-dropdownMenu.addEventListener('mouseleave', () => {
-  dropdownMenu.classList.toggle('active');
-});
