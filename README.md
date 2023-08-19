@@ -34,7 +34,7 @@ The following technologies were employed in the creation of this project:
 - [SASS](https://sass-lang.com/) for CSS;
 - [AOS Animation Library](https://michalsnik.github.io/aos/) for animations using JavaScript;
 - [Swipper JS](https://swiperjs.com/) as main modern mobile touch design tool;
-- [Figma](https://www.figma.com/file/LVNssQDuZp0afhif9M4FrZ/Pok%C3%A9mon---Codeboost?type=design&node-id=54%3A296&mode=design&t=d5fUXAAzJl69TwFA-1) detailed Figma file for the project;
+- [Figma](https://www.figma.com/file/2XGKjERQyyn9KWVBiasplt/REISS-Family-Investments?type=design&node-id=0%3A1&mode=design&t=6A5MOKFtBgGyNr2l-1) detailed Figma file for the project;
 - Responsive to all devices and screens size;
 - HTML, CSS, and JavaScript.
   
@@ -53,7 +53,7 @@ ___
 ```bash
 
 # Navigate to the directory
-$ cd lp-reiss-website
+$ cd reiss-website
 
 # Install the necessary dependencies
 $ sudo yarn
