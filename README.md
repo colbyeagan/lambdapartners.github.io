@@ -8,7 +8,7 @@
   <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/ruivergani/lp-pokemon" />
 </p>
 
-This project was part of a course to practice front-end development concepts.
+Website developed for REISS.
 ___
 
 ## 💻 About
