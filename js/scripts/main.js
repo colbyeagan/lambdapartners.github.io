@@ -66,8 +66,8 @@ const swiperInvestments = new Swiper(".slide-investments-principal", {
     releaseOnEdges: true,
   },
   autoplay: {
-    delay: 500,
-    disableOnInteraction: false // autoplay nao para de funcionar
+    delay: 5000,
+    disableOnInteraction: true // autoplay nao para de funcionar
   },
   pagination: {
     el: ".swiper-pagination",

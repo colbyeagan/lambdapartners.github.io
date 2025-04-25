@@ -1,9 +1,9 @@
 {
   "name": "gulp-file",
   "version": "1.0.0",
-  "description": "Reiss Family Office",
+  "description": "Lambda Partners LLC",
   "main": "index.js",
-  "author": "Rui Vergani Neto",
+  "author": "Colby Eagan",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.16.0",

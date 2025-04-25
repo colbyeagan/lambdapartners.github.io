@@ -1,6 +1,21 @@
 // SECTION HERO
+.s-hero#missionimg {
+    position: relative;
+    height: 76rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('../assets/images/driven.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 6rem 0;
+    h1, p{
+        color: #ffffff;
+        font-weight: 400;
+    }
+  }
+  
 .s-hero{
-    background: linear-gradient(115.6deg, #000000 -7.5%, #151515 105.49%);
+    background: linear-gradient(115.6deg, #ffffff -7.5%, #ffffff 105.49%);
     padding-bottom: 67px;
     position: relative;
     height: 76rem;
@@ -16,7 +31,7 @@
             align-items: flex-start;
             flex-direction: column;
             h1, p{
-                color: #FFFFFF;
+                color: #343434;
                 font-weight: 400;
             }
             h1{
@@ -43,7 +58,7 @@
                     font-weight: 600;
                     font-size: 18px;
                     line-height: 120%;
-                    color: #FFFFFF;
+                    color: #343434;
                     transition: all .5s ease-in-out;
                 }
                 &:hover{
@@ -109,6 +124,30 @@
                             bottom: 90px;
                             opacity: 0;
                         }
+                        .overlay {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            background-color: rgba(30, 30, 30, 0.5); // grey translucent
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            pointer-events: none; // allows click-through
+                            z-index: 1; // sits above the image, below text
+                          }
+                          
+                          .overlay-text {
+                            font-family: 'Montserrat', sans-serif;
+                            font-size: 2.5rem;
+                            color: #fff;
+                            text-transform: uppercase;
+                            text-align: center;
+                            font-weight: 700;
+                            z-index: 2;
+                          }
+                          
                         &-active{
                             .logo-slide{
                                 opacity: 1;
@@ -207,6 +246,7 @@
                                     min-width: 100%;
                                 }
                             }
+                            
                             .logo-slide{
                                 right: -40px;
                                 

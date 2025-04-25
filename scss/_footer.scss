@@ -1,5 +1,5 @@
 footer{
-    background: linear-gradient(115.6deg, #000000 -7.5%, #151515 105.49%);
+    background: linear-gradient(115.6deg, #1f1f1f -7.5%, #151515 105.49%);
     width: 100%;
     padding-top: 112px;
     display: flex;
@@ -21,6 +21,11 @@ footer{
             max-height: 1px;
         }
     }
+    .footer__top img {
+        width: 34px;
+        height: 34px;
+      }
+      
     .footer__body{
         width: 100%;
         max-width: 33.5rem;
@@ -28,6 +33,9 @@ footer{
         padding-bottom: 45px;
         display: flex;
         flex-direction: column;
+        img{
+            max-width: 13rem;
+        }
         .footer__body__logo{
             display: block;
             padding-bottom: 35px;
@@ -41,6 +49,7 @@ footer{
                 display: flex;
                 align-items: center;
                 gap: 5px;
+                
                 p{
                     font-family: 'Inter', sans-serif;
                     font-weight: 400;

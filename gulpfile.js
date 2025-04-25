@@ -73,3 +73,12 @@ gulp.task('watch', watch);
 
 // Gulp default
 gulp.task('default', gulp.parallel('watch', 'browser-sync', 'sass','plugincss', 'allJS', 'pluginjs'));
+
+function copyAssets() {
+    return gulp.src('assets/**/*')
+        .pipe(gulp.dest('dist/assets')) // or './assets' if you're serving from root
+        .pipe(browserSync.stream());
+}
+gulp.task('assets', copyAssets);
+gulp.watch('assets/**/*', copyAssets);
+gulp.task('default', gulp.parallel('watch', 'browser-sync', 'sass','plugincss', 'allJS', 'pluginjs', 'assets'));
