@@ -47,7 +47,7 @@ header{
                         font-size: 16px;
                         line-height: 19px;
                         text-align: center;
-                        color: rgba(45, 50, 53, 0.85);
+                        color: #000080;
                         transition: all .5s ease-in-out;
                         position: relative;
                         &:hover{
@@ -127,11 +127,11 @@ header{
                 }
                 &.is-active{
                     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-                        background-color: #2D3235;
+                        background-color: #000080;
                     }
                 }
                 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-                    background-color: #2D3235;
+                    background-color: #000080;
                 }
             }
         }

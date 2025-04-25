@@ -13,6 +13,10 @@
         font-weight: 400;
     }
   }
+
+.swiper-progress-bar#invisible{
+    display: none !important;
+}
   
 .s-hero{
     background: linear-gradient(115.6deg, #ffffff -7.5%, #ffffff 105.49%);
