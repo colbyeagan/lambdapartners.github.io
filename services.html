@@ -55,6 +55,9 @@
 
 <body>
   <main id="main">
+    <div class="floating-shapes">
+  <img src="./assets/images/squiggles3.png" alt="squiggles2" class="shape squiggle-shape2" />
+</div>
     <!-- === HEADER === -->
     <header id="js-header">
       <div class="container">
@@ -149,7 +152,7 @@
               <div class="swiper-slide slide-01">
                 <a href="contact.html" class="slide-link">
                   <div class="bg-image">
-                    <img src="./assets/images/contact-graphic-2.jpg" alt="image slide 01">
+                    <img src="./assets/images/contact_baseball.jpg" alt="image slide 01">
                   </div>
                   <div class="overlay">
                     <span class="overlay-text">Contact Us</span>
@@ -224,8 +227,21 @@
   <!-- === SWIPER SLIDE JS === -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <!-- === JavaScript === -->
-  <script language="javascript" type="text/javascript" src="js/plugins.js"></script>
-  <script language="javascript" type="text/javascript" src="js/all.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/all.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const tl = gsap.timeline({ delay: 0.5 });
+
+  tl.to(".shape", {
+    opacity: 1,
+    duration: 2,
+    stagger: 0.5,
+    ease: "power2.out"
+  });
+});
+
+</script>
 </body>
 
 </html>

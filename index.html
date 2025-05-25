@@ -55,6 +55,12 @@
 
 <body>
   <main id="main">
+    <div class="floating-shapes">
+  <div class="shape red-circle"></div>
+  <img src="./assets/images/football-shape-hi.png" alt="football" class="shape football-shape" />
+  <img src="./assets/images/squiggle.svg" alt="squiggle" class="shape squiggle-shape" />
+</div>
+
     <!-- === HEADER === -->
     <header id="js-header">
       <div class="container">
@@ -128,16 +134,7 @@
           <p data-aos="fade-right" data-aos-once="true" data-aos-delay="200">Athletics dealmaking agency focusing on
             lower middle market partnership opportunities for collegiate athletics and business owners.
           </p>
-          <a href="about.html" class="link-properties" title="link-properties" data-aos="fade-right"
-            data-aos-once="true" data-aos-delay="300">
-            <p></p>
-            <img src="./assets/icons/icon-arrow-right.svg" alt="icon right arrow" title="icon right arrow"
-              aria-label="icon right arrow">
-          </a>
-          <a href="#footer" class="link-mousedown" title="investments-mousedown">
-            <img src="./assets/icons/arrow-down-home-page.svg" alt="icon arrow down" title="icon arrow down"
-              aria-label="icon mouse">
-          </a>
+
         </div>
         <div class="s-hero__slide" data-aos="fade-left" data-aos-once="true" data-aos-duration="600">
           <div class="slide-principal">
@@ -162,7 +159,7 @@
               <div class="swiper-slide slide-01">
                 <a href="services.html" class="slide-link">
                   <div class="bg-image">
-                    <img src="./assets/images/services.jpg" alt="image slide 01">
+                    <img src="./assets/images/bball_court.jpg" alt="image slide 01">
                   </div>
                   <div class="overlay">
                     <span class="overlay-text">Services</span>
@@ -256,14 +253,31 @@
     </footer>
   </main>
 
+  
+
+
   <!-- === GSAP CDN === -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
   <!-- === SWIPER SLIDE JS === -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <!-- === JavaScript === -->
-  <script language="javascript" type="text/javascript" src="js/plugins.js"></script>
-  <script language="javascript" type="text/javascript" src="js/all.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/all.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const tl = gsap.timeline({ delay: 0.5 });
+
+  tl.to(".shape", {
+    opacity: 1,
+    duration: 2,
+    stagger: 0.5,
+    ease: "power2.out"
+  });
+});
+
+</script>
+
 </body>
 
 </html>
