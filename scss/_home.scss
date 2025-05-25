@@ -12,10 +12,14 @@ body {
   pointer-events: none; /* Make sure it doesn't interfere with clicks */
 }
 
+.floating-shapes .shape {
+  will-change: transform, opacity;
+}
 
 
 .shape {
   position: absolute;
+  opacity: 1 !important;
 }
 
 /* Bigger, center-ish positioned shapes */
@@ -53,6 +57,8 @@ body {
   height: auto;
   transform: translate(-50%, -50%);
 }
+
+
 
 
 // SECTION HERO

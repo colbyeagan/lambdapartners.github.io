@@ -231,16 +231,16 @@
   <script src="js/all.js"></script>
   <script>
   document.addEventListener("DOMContentLoaded", () => {
-  const tl = gsap.timeline({ delay: 0.5 });
+    const tl = gsap.timeline({ delay: 0.5 });
 
-  tl.to(".shape", {
-    opacity: 1,
-    duration: 2,
-    stagger: 0.5,
-    ease: "power2.out"
+    tl.from(".shape", {
+      y: 800,              // Start 80px below their final position
+      opacity: 0,
+      duration: 1.2,
+      stagger: 0.3,
+      ease: "power3.out"
+    });
   });
-});
-
 </script>
 </body>
 

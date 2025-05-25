@@ -59,6 +59,7 @@
   <div class="shape red-circle"></div>
   <img src="./assets/images/football-shape-hi.png" alt="football" class="shape football-shape" />
   <img src="./assets/images/squiggle.svg" alt="squiggle" class="shape squiggle-shape" />
+  <img src="./assets/images/yellow-x.png" alt="yellow X" class="shape yellow-x-shape" />
 </div>
 
     <!-- === HEADER === -->
@@ -266,17 +267,25 @@
   <script src="js/all.js"></script>
   <script>
   document.addEventListener("DOMContentLoaded", () => {
-  const tl = gsap.timeline({ delay: 0.5 });
+    const tl = gsap.timeline({ delay: 0.5 });
 
-  tl.to(".shape", {
-    opacity: 1,
-    duration: 2,
-    stagger: 0.5,
-    ease: "power2.out"
+    tl.from(".shape", {
+      y: 800,              // Start 80px below their final position
+      opacity: 0,
+      duration: 1.2,
+      stagger: 0.3,
+      ease: "power3.out"
+    });
+    gsap.to(".yellow-x-shape", {
+      rotation: 360,
+      duration: 100,
+      repeat: -1,
+      ease: "linear",
+      transformOrigin: "50% 50%"
+    });
   });
-});
-
 </script>
+
 
 </body>
 
