@@ -267,15 +267,18 @@
   <script src="js/all.js"></script>
   <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const tl = gsap.timeline({ delay: 0.5 });
+    gsap.registerPlugin(ScrollTrigger);
 
-    tl.from(".shape", {
-      y: 800,              // Start 80px below their final position
+    // Initial animation: shapes float up into view
+    gsap.from(".shape", {
+      y: 800,
       opacity: 0,
       duration: 1.2,
       stagger: 0.3,
       ease: "power3.out"
     });
+
+    // Slow continuous rotation for yellow X
     gsap.to(".yellow-x-shape", {
       rotation: 360,
       duration: 100,
@@ -283,8 +286,25 @@
       ease: "linear",
       transformOrigin: "50% 50%"
     });
+
+    // Smooth parallax scroll effect
+    document.querySelectorAll(".shape").forEach((shape) => {
+      const speed = parseFloat(shape.dataset.speed) || 0.3;
+
+      gsap.to(shape, {
+        yPercent: -speed * 200, // smaller value = slower movement
+        ease: "none",
+        scrollTrigger: {
+          trigger: "#main",
+          start: "top top",
+          end: "bottom bottom",
+          scrub: true
+        }
+      });
+    });
   });
 </script>
+
 
 
 </body>

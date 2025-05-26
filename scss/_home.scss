@@ -16,6 +16,67 @@ body {
   will-change: transform, opacity;
 }
 
+#pad-right{
+    margin-top: 48px;
+    margin-left: 48px;
+}
+.chalk-list {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+  font-family: "Cabin Sketch", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.chalk-header {
+  font-family: "Cabin Sketch", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.chalk-list li {
+  counter-increment: item;
+  margin-bottom: 0em;
+  position: relative;
+  padding-left: 1.5em;
+  font-size: 4.2rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-family: "Cabin Sketch", sans-serif;
+}
+
+#about-bg {
+  background: linear-gradient(270deg, #ffffff, #ff6f6f);
+  background-size: 400% 400%;
+  animation: gradientShift 20s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.chalk-list li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 4.2rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-family: "Cabin Sketch", sans-serif;
+}
+
+.yellow-lam-shape{
+  top: 0%;
+  left: -20%;
+}
 
 .shape {
   position: absolute;
@@ -32,13 +93,31 @@ body {
   left: 40%;
 }
 
+.blue-circle {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(120, 189, 253);
+  border-radius: 50%;
+  top: 30%;
+  left: 40%;
+}
+
+.brown-circle {
+  width: 300px;
+  height: 300px;
+  background-color: #ce6846;
+  border-radius: 50%;
+  top: 10%;
+  left: 40%;
+}
+
 .squiggle-shape2 {
   position: absolute;
-  top: 20%;
-  left: 50%;
+  top: 0%;
+  left: -10%;
   width: 1000px;
   height: auto;
-  transform: rotate(180deg) translate(70%, 30%);
+  transform: rotate(-90deg);
 }
 
 .football-shape {
@@ -58,6 +137,15 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.squiggle-shape3 {
+  position: absolute;
+  top: 64%;
+  left: 55%;
+  width: 500px;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
 
 
 
@@ -65,14 +153,15 @@ body {
 .s-hero#missionimg {
     position: relative;
     height: 76rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('../assets/images/driven2.jpg');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(-270deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.563)), url('../assets/images/tennis_racket.jpeg');
+    //background: url('../assets/images/tennis_racket.jpeg');
+    background-size: 120% auto;
+    background-position: 90% center;
     background-repeat: no-repeat;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 6rem 0;
     h1, p{
-        color: #ffffff;
+        color: #000000;
         font-weight: 400;
     }
   }
