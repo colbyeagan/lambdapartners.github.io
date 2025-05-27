@@ -7,7 +7,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0; /* Behind everything else */
+  z-index: -1 !important; /* Behind everything else */
   overflow: hidden;
   pointer-events: none; /* Make sure it doesn't interfere with clicks */
 }
@@ -15,6 +15,12 @@ body {
 .floating-shapes .shape {
   will-change: transform, opacity;
 }
+
+
+#no-top-pad{
+    margin-top: 0px;
+}
+
 
 #pad-right{
     margin-top: 48px;
@@ -45,11 +51,21 @@ body {
 }
 
 #about-bg {
-  background: linear-gradient(270deg, #ffffff, #ff6f6f);
-  background-size: 400% 400%;
-  animation: gradientShift 20s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
 }
 
+.background-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #ffffff, #ff6f6f);
+  animation: gradientShift 20s ease-in-out infinite;
+  z-index: -100;
+  opacity: 0.3;
+}
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%;
@@ -137,14 +153,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.squiggle-shape3 {
-  position: absolute;
-  top: 64%;
-  left: 55%;
-  width: 500px;
-  height: auto;
-  transform: translate(-50%, -50%);
-}
+
 
 
 
@@ -163,6 +172,9 @@ body {
     h1, p{
         color: #000000;
         font-weight: 400;
+    }
+    p{
+        font-size: 2.2rem;
     }
   }
 
@@ -947,3 +959,21 @@ body {
         }
     }
 }
+
+@media (max-width: 1140px){
+    .brown-circle {
+    top: 40%;
+    left: 60%;
+    }
+    .s-hero#missionimg {
+    position: relative;
+    height: 96rem;
+    background-size: 120% auto;
+    p{
+        max-width: 700px;
+    }
+  }
+
+
+}
+

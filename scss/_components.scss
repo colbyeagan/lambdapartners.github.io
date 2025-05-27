@@ -180,6 +180,8 @@
                 display: flex;
                 align-items: center;
                 gap: 15px;
+                position: relative;
+                z-index: 10;
                 span{
                     font-family: 'Inter', sans-serif;
                     font-weight: 600;
@@ -196,7 +198,7 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 150%;
-                color: #78797A;
+                color: #000000;
             }
             ul{
                 display: flex;
