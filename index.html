@@ -224,24 +224,7 @@
           <a href="index.html" class="footer__body__logo" title="logo">
             <img src="./assets/logos/LpHorizontalWhite.svg" alt="logo footer" title="logo footer" aria-label="logo footer">
           </a>
-          <ul>
-            <li>
-              <p>Phone: +1 980 622 3389 </p>
-            </li>
-            <li>
-              <p>
-                Email:
-              </p>
-              <a href="mailto:colbyeagan6@gmail.com" target=”_blank” title="email">
-                colbyeagan6@gmail.com
-              </a>
-            </li>
-            <li>
-              <p>
-                Lambda Partners LLC<br>
-              </p>
-            </li>
-          </ul>
+          <div id="contact-info-placeholder"></div>
         </div>
         <div class="footer__bottom">
           <p>© Lambda Partners 2025. All rights reserved.</p>
@@ -304,6 +287,14 @@
     });
   });
 </script>
+<script>
+  fetch('contact-footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('contact-info-placeholder').innerHTML = data;
+    });
+</script>
+
 
 
 
