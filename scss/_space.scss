@@ -1,0 +1,63 @@
+// Apply the background image to the entire body, making it the background for the whole page
+body.space-page, html.space-page {
+  margin: 0;
+  padding: 0;
+  background: url('../assets/images/lambda_space.jpg');
+  background-color: black;
+  background-size: cover;  // Ensure the image covers the entire page
+  color: white;  // Make sure all text is white by default
+}
+#space-hamburger, #space-hamburger::before, #space-hamburger::after{
+  background-color: white;
+}
+
+// HEADER - No background for header
+.space-header {
+  background-color: transparent !important;  // Make header transparent
+  padding: 0;  // Remove any extra padding
+  border-bottom: 0px;
+  
+  // Ensure nav and its children have no background
+  nav, nav ul, nav li {
+    background: transparent !important;  // Ensure nav and ul inside header have no background
+  }
+  
+  // Ensure text in navigation links is white
+  nav a.space-hd-txt {
+    color: white;
+    text-decoration: none;  // Optional, to remove underline
+  }
+
+  // Optional: Add hover effect for the links
+  nav a.space-hd-txt:hover {
+    color: #f0f0f0; // Light grey on hover (you can adjust the color)
+  }
+}
+
+// SECTION HERO
+.s-hero#spaceimg {
+  position: relative;
+  height: 100vh;  // Make the hero section fill the entire viewport height
+  background: url('../assets/images/lambda_space.jpg') no-repeat center center;
+  background-size: cover;  // Ensure the image covers the section
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);  // White text to be visible over the background
+  padding-top: 15vh;  // Adjust the top padding to move text down from the top (adjust as needed)
+  
+  // Flexbox for horizontal centering
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  // Align text to the top part of the section
+
+  // Center text horizontally and keep it towards the top
+  text-align: center;
+  h1, p {
+    color: rgb(255, 255, 255); // Ensure text is white
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 2.2rem;
+  }
+}
