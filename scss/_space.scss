@@ -3,10 +3,13 @@ body.space-page, html.space-page {
   margin: 0;
   padding: 0;
   background: url('../assets/images/lambda_space.jpg');
+  background-position: center;
   background-color: black;
   background-size: cover;  // Ensure the image covers the entire page
   color: white;  // Make sure all text is white by default
 }
+
+
 #space-hamburger, #space-hamburger::before, #space-hamburger::after{
   background-color: white;
 }
@@ -38,7 +41,7 @@ body.space-page, html.space-page {
 .s-hero#spaceimg {
   position: relative;
   height: 100vh;  // Make the hero section fill the entire viewport height
-  background: url('../assets/images/lambda_space.jpg') no-repeat center center;
+  //background: url('../assets/images/lambda_space.jpg') no-repeat center center;
   background-size: cover;  // Ensure the image covers the section
   background-position: center;
   background-repeat: no-repeat;
